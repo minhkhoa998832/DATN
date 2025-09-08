@@ -23,9 +23,10 @@ export default function Register() {
       if (err.response && err.response.status === 400) {
         alert(err.response.data); // ❌ hiển thị "Tên đăng nhập đã tồn tại"
         } 
-      //else {
+      else {
           //alert('❌ Có lỗi xảy ra khi đăng ký, vui lòng thử lại!');
-        //}
+          alert(`❌ ${err.message}`);
+        }
     }
   };
   
